@@ -96,7 +96,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Lakshmi Enterprises. All rights reserved.
             </p>
             <p className="text-sm text-primary-foreground/60">
-              Designed by Bhushan Chaudhari
+              Made with &#10084; By @Mehul Chaudhari
             </p>
           </div>
         </div>
