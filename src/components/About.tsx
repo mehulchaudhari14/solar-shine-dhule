@@ -1,4 +1,4 @@
-import { Award, Users, Target, CheckCircle2 } from "lucide-react";
+import { Award, CheckCircle2 } from "lucide-react";
 import solarInstallation from "@/assets/solar-installation.jpg";
 
 const About = () => {
@@ -7,12 +7,6 @@ const About = () => {
     "Expert technical team with B.E. & M.Tech qualifications",
     "Complete solar solutions from consultation to installation",
     "Serving residential, commercial & industrial sectors",
-  ];
-
-  const stats = [
-    { icon: Award, value: "10+", label: "Years Experience" },
-    { icon: Users, value: "1000+", label: "Happy Customers" },
-    { icon: Target, value: "100%", label: "Quality Assured" },
   ];
 
   return (
@@ -72,18 +66,6 @@ const About = () => {
               ))}
             </ul>
 
-            {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-14 h-14 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <stat.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <p className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
