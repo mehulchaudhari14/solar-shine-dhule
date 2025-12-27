@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, User } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, User, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -122,74 +122,45 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="p-6 md:p-8 bg-card rounded-2xl border border-border shadow-lg">
-            <h3 className="text-xl font-semibold text-foreground mb-6">Send us a Message</h3>
-            <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="Enter phone number"
-                    className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Project Type
-                </label>
-                <select className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all">
-                  <option value="">Select project type</option>
-                  <option value="residential">Residential Solar</option>
-                  <option value="commercial">Commercial Solar</option>
-                  <option value="industrial">Industrial Solar</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Your Message
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your requirements..."
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-                />
-              </div>
-              <Button variant="solar" size="lg" className="w-full">
-                Send Message
+          {/* WhatsApp CTA Card */}
+          <div className="p-8 md:p-12 bg-gradient-to-br from-accent/20 via-primary/10 to-accent/5 rounded-2xl border border-accent/30 shadow-lg flex flex-col items-center justify-center text-center h-full min-h-[400px]">
+            <div className="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-6 shadow-lg">
+              <MessageCircle className="w-10 h-10 text-accent-foreground" />
+            </div>
+            
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              Chat With Us on WhatsApp
+            </h3>
+            
+            <p className="text-muted-foreground mb-8 max-w-sm">
+              Get instant response! Message Bhushan Chaudhari directly for quick quotes, 
+              inquiries, and solar consultations.
+            </p>
+            
+            <a
+              href="https://wa.me/918888815616?text=Hi%2C%20I%27m%20interested%20in%20solar%20solutions%20from%20Lakshmi%20Enterprises.%20Please%20share%20more%20details."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-xs"
+            >
+              <Button variant="solar" size="lg" className="w-full gap-3 text-lg py-6 bg-accent hover:bg-accent/90">
+                <MessageCircle className="w-6 h-6" />
+                Message on WhatsApp
               </Button>
-              <p className="text-sm text-center text-muted-foreground">
-                Or call us directly at{" "}
-                <a href="tel:8956592844" className="text-primary font-medium hover:underline">
-                  8956592844
-                </a>
+            </a>
+            
+            <p className="text-sm text-muted-foreground mt-6">
+              Or call directly:{" "}
+              <a href="tel:8888815616" className="text-primary font-medium hover:underline">
+                8888815616
+              </a>
+            </p>
+            
+            <div className="mt-8 pt-6 border-t border-border/50 w-full">
+              <p className="text-xs text-muted-foreground">
+                Available Mon - Sat, 9:00 AM - 7:00 PM
               </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
