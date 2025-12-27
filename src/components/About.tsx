@@ -1,12 +1,12 @@
-import { Award, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import solarInstallation from "@/assets/solar-installation.jpg";
 
 const About = () => {
   const features = [
     "Authorized distributor for top solar brands",
-    "Expert technical team with B.E. & M.Tech qualifications",
     "Complete solar solutions from consultation to installation",
     "Serving residential, commercial & industrial sectors",
+    "Quality products with reliable after-sales support",
   ];
 
   return (
@@ -21,18 +21,6 @@ const About = () => {
                 alt="Solar panel installation"
                 className="w-full h-auto object-cover"
               />
-              {/* Floating Card */}
-              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-auto md:w-64 bg-card/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-solar flex items-center justify-center">
-                    <Award className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Certified Experts</p>
-                    <p className="text-sm text-muted-foreground">B.E. & M.Tech Qualified</p>
-                  </div>
-                </div>
-              </div>
             </div>
             {/* Decorative Element */}
             <div className="absolute -z-10 -bottom-6 -right-6 w-full h-full rounded-2xl bg-gradient-solar opacity-20" />
@@ -51,9 +39,8 @@ const About = () => {
 
             <p className="text-lg text-muted-foreground mb-8">
               Lakshmi Enterprises is a leading solar distributor in Dhule, Maharashtra. 
-              Led by qualified professionals Hrishikesh P. Chaudhari (B.E., M.Tech in Electrical) 
-              and Bhushan Chaudhari, we bring technical expertise and quality products to 
-              every solar project.
+              Led by Hrishikesh P. Chaudhari and Bhushan Chaudhari, we bring quality products 
+              and reliable service to every solar project.
             </p>
 
             {/* Features List */}
